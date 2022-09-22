@@ -1,0 +1,28 @@
+{% extends "parent_templates/parent.html" %}
+
+{% block title %}Employee Log-In{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+            <title>Text alignment</title>
+            <style>
+                h1{text-align:left;}
+            </style>
+            <body>
+
+            </body>
+
+        </div>
+    </div>
+<br><br>
+<h2>Employee Log-In:</h2>
+<br><br>
+<form action="/employee" method = "POST">
+    <p>Employee ID <input type = "text" name = "employee_id" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
+<br><br>
+<p>Choose and employee ID between 100000 and 100039</p>
+{% endblock %}

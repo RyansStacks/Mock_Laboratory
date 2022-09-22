@@ -1,0 +1,40 @@
+{% extends "parent_templates/customer.html" %}
+{% block title %}Customer Dashboard{% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <title>Customer_Dashboard</title>
+</head>
+<body>
+<br><br>
+<h2>Customer Dashboard:</h2>
+<br><br>
+
+<br>
+<p>Welcome to the Customer Dashboard! Please make a selection above to view current results or charges</p>
+
+<ul>
+<b>Welcome!</b> <br>
+  {{customer_display1 | safe}}
+</ul>
+<br>
+<ul>
+<b>Current Address:</b> <br>
+  {{customer_display2 | safe}}
+    {{customer_display3 | safe}}
+</ul>
+<br>
+<ul>
+<b>Current Phone:</b> <br>
+  {{customer_display4 | safe}}
+</ul>
+
+<ul>
+<b>Current Email:</b> <br>
+  {{customer_display5 | safe}}
+</ul>
+
+</body>
+
+{% endblock %}

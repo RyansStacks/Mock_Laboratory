@@ -1,0 +1,19 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}QC Summary Statistics{% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <title>Missing Tests</title>
+</head>
+<body>
+<ul>
+    <br><br>
+<h2>QC Summary Statistics:</h2> <br>
+  {{qc_summary_display | safe}}
+</ul>
+
+
+</body>
+
+{% endblock %}

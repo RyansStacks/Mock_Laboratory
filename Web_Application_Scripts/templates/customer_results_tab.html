@@ -1,0 +1,17 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %} Customer  Results {% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Results</title>
+</head>
+<body>
+<br><br>
+<h2>Customer Results:</h2> <br>
+{{customer_results_display | safe}}
+
+
+</body>
+
+{% endblock %}

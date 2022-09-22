@@ -1,0 +1,67 @@
+{% extends "parent_templates/parent.html" %}
+
+{% block title %}Place an Order{% endblock %}
+
+{% block main %}
+            <body>
+                <h2>Welcome to Fake-Lab:</h2>
+                <br><br>
+                <h3>Fill Out Customer Information Below:</h3>
+            <br><br>
+            </body>
+
+
+                <p><b>Personal Information:</b></p>
+
+                <br>
+            <form action="/place_order" method = "POST">
+                    <p>First Name: <input type ="text" name = "first_name" /></p>
+                    <p>Last Name: <input type ="text" name = "last_name" /></p>
+                    <p>Date of Birth:<input type ="date" name = "date_of_birth" /></p>
+                    <p><b>Contact Information:</b></p>
+                    <p>Street Number(Any Numerals) <input type ="text" name = "street_number" /></p>
+                    <p>Street Name (Any Characters) <input type ="text" name = "street_name" /></p>
+                    <p>Street Suffix <input type ="text" name = "street_suffix" /></p>
+                    <p>City (Any Characters)<input type ="text" name = "city" /></p>
+                    <p>State (Enter Characters) <input type ="text" name = "state" /></p>
+                    <p>Zip (Enter #####)<input type="text" name = "zip" /></p>
+                    <p>Email(Enter anything + @fakemail.fake) <input type="email" name = "email" /></p>
+                        <p>Phone(Enter 555-555-####) <input type="text" name = "phone" /></p>
+
+                    <br><br>
+                    <h3>Choose One or More Test Panels Below:</h3>
+                    <br><br>
+                 <div>
+                     <input type="checkbox" id="100000" name="100000">
+                      <label for="100000">BMP PANEL PANEL $29.99</label>
+                    </div>
+                 <div>
+                     <input type="checkbox" id="100001" name="100001">
+                      <label for="100001">LIVER PANEL $34.49</label>
+                    </div>
+                     <div>
+                     <input type="checkbox" id="100002" name="100002">
+                      <label for="100002">RENAL PANEL $25.50</label>
+                    </div>
+                     <div>
+                     <input type="checkbox" id="100003" name="100003">
+                      <label for="100003">DIABETES PANEL $45.00</label>
+                    </div>
+                     <div>
+                     <input type="checkbox" id="100004" name="100004">
+                      <label for="100004">LIPID PANEL $55.00</label>
+                    </div>
+                     <div>
+                     <input type="checkbox" id="100005" name="100005">
+                      <label for="100005">CBC PANEL $24.99</label>
+                    </div>
+                     <div>
+                     <input type="checkbox" id="100006" name="100006">
+                      <label for="100006">COAG PANEL $59.99</label>
+                    </div>
+                    <br>
+                    <input type="submit" value="Place Order">
+                    </form>
+<br><br>
+ <p>Please wait a few seconds for form to submit</p>
+{% endblock %}

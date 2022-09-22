@@ -1,0 +1,31 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}Patient Moving Averages{% endblock %}
+
+{% block main %}
+
+<style type="text/css">
+ ul {
+  list-style-type: none;
+ }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <h2>Patient Moving Averages For:</h2>
+    <h3>{{analytes[0]}}</h3>
+</head>
+<body>
+
+
+    <br><br>
+<h2>Moving Averages by Analyte:</h2> <br>
+  {{moving_averages_tab2 | safe}}
+<br>
+
+    <br><br>
+<b>z_score and p_value by Analyte:</b> <br>
+  {{moving_averages_tab3 | safe}}
+<br>
+
+</body>
+
+{% endblock %}

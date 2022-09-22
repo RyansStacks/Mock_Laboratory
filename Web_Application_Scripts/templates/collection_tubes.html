@@ -1,0 +1,19 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}Collection Tubes{% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <title>Collection_Tubes</title>
+</head>
+<body>
+<ul>
+    <br><br>
+<h2>COLLECTION TUBES NEEDED TO BE DRAWN:</h2> <br>
+  {{collection_containers_display | safe}}
+</ul>
+
+
+</body>
+
+{% endblock %}

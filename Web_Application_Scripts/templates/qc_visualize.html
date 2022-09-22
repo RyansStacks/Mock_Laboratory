@@ -1,0 +1,54 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}QC Visualization{% endblock %}
+
+{% block main %}
+<body>
+<br>
+<h2>QC Visualization</h2>
+<br>
+  <p><b>Select One Analyte to View Levy-Jennings Graphs:</b></p>
+
+  <label for="analyte_name"><b>Choose an analyte:</b></label>
+  <br>
+<form action="/box_plot" method = "POST">
+  <select name="analyte_name" id="analyte_name" >
+    <option value="SODIUM">SODIUM</option>
+    <option value="POTASSIUM">POTASSIUM</option>
+    <option value="BICARBONATE">BICARBONATE</option>
+    <option value="CALCIUM">CALCIUM</option>
+    <option value="CHLORIDE">CHLORIDE</option>
+    <option value="GLUCOSE">GLUCOSE</option>
+    <option value="PROTEIN">PROTEIN</option>
+    <option value="CREATININE">CREATININE</option>
+    <option value="GFR">GFR</option>
+    <option value="UREA NITROGEN">UREA NITROGEN</option>
+    <option value="2HRGTT">2HRGTT</option>
+    <option value="A1C">A1C</option>
+    <option value="AST">AST</option>
+    <option value="ALT">ALT</option>
+    <option value="GGT">GGT</option>
+    <option value="ALBUMIN">ALBUMIN</option>
+    <option value="CHOLESTEROL">CHOLESTEROL</option>
+    <option value="TRIGLYCERIDE">TRIGLYCERIDE</option>
+    <option value="LDL">LDL</option>
+    <option value="HDL">HDL</option>
+    <option value="WBC">WBC</option>
+    <option value="RBC">RBC</option>
+    <option value="HEMOGLOBIN">HEMOGLOBIN</option>
+    <option value="HEMATOCRIT">HEMATOCRIT</option>
+	<option value="PLATELET">PLATELET</option>
+    <option value="PROTIME">PROTIME</option>
+	<option value="APTT">APTT</option>
+  </select>
+  <br><br>
+  <label for="analyte_name"><b>Choose an analyte:</b></label>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+
+
+</body>
+
+{% endblock %}

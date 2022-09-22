@@ -1,0 +1,19 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %} Patient Ranges Statistical Summary {% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+<br>
+<h2>Customer Ranges:</h2>
+<br>
+</head>
+<body>
+
+    <br><br>
+<h2>Customer Ranges Statistical Summary</h2> <br>
+  {{patient_ranges_tab | safe}}
+
+</body>
+
+{% endblock %}

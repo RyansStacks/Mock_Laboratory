@@ -1,0 +1,19 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}Qc_Values{% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <br>
+    <h2>Quality Control Individual Results</h2>
+    <br>
+</head>
+<body>
+
+    <br><br>
+<h2>QC Values Based on Selected Values:</h2> <br>
+  {{qc_values_tab | safe}}
+
+</body>
+
+{% endblock %}

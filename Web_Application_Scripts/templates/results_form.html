@@ -1,0 +1,71 @@
+{% extends "parent_templates/customer.html" %}
+{% block title %}Customer Results Dashboard{% endblock %}
+
+{% block main %}
+<body>
+<h2>Customer Results Dashboard</h2>
+
+  <form action="/results" method = "POST">
+    <p><b>Select a start and end date:</b></p>
+    <p>Note: start and end date will default to choose all values</p>
+      <label for="start"><b>Start date:</b></label>
+      <input type="date" id="start" name="start_date"
+         value="2022-03-01"
+         min="2022-03-01">
+        <br><br><br>
+      <label for="end"><b>End date:</b></label>
+      <input type="date" id="end" name="end_date"
+         value="2022-08-08"
+         min="2022-03-01">
+        <br><br><br><br>
+      <select name="alert" id="alert" multiple>
+      <option value="Low" selected>Low</option>
+      <option value="Normal" selected>Normal</option>
+      <option value="High" selected>High</option>
+      </select>
+      <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+      <p><b>Note: If No Selection Made Then All Selections Are Chosen!</b>.</p>
+          <br><br><br><br>
+    <label for="analyte_name"><b>Choose an analyte:</b></label>
+    <br>
+    <select name="analyte_name" id="analyte_name" multiple>
+      <option value="SODIUM" selected>SODIUM</option>
+      <option value="POTASSIUM" selected>POTASSIUM</option>
+      <option value="BICARBONATE" selected>BICARBONATE</option>
+      <option value="CALCIUM" selected>CALCIUM</option>
+      <option value="CHLORIDE" selected>CHLORIDE</option>
+      <option value="GLUCOSE" selected>GLUCOSE</option>
+      <option value="PROTEIN" selected>PROTEIN</option>
+      <option value="CREATININE" selected>CREATININE</option>
+      <option value="GFR" selected>GFR</option>
+      <option value="UREA NITROGEN" selected>UREA NITROGEN</option>
+      <option value="2HRGTT">2HRGTT selected</option>
+      <option value="A1C" selected>A1C </option>
+      <option value="AST" selected>AST </option>
+      <option value="ALT" selected>ALT </option>
+      <option value="GGT" selected>GGT </option>
+      <option value="ALBUMIN" selected>ALBUMIN</option>
+      <option value="CHOLESTEROL" selected>CHOLESTEROL</option>
+      <option value="TRIGLYCERIDE" selected>TRIGLYCERIDE</option>
+      <option value="LDL" selected>LDL </option>
+      <option value="HDL" selected>HDL</option>
+      <option value="WBC" selected>WBC </option>
+      <option value="RBC selected">RBC </option>
+      <option value="HEMOGLOBIN" selected>HEMOGLOBIN</option>
+      <option value="HEMATOCRIT" selected>HEMATOCRIT</option>
+      <option value="PLATELET" selected>PLATELET</option>
+      <option value="PROTIME" selected>PROTIME</option>
+      <option value="APTT" selected>APTT</option>
+    </select>
+      <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+      <p><b>Note: If No Selection Made Then All Analytes Are Chosen!</b>.</p>
+    <br><br>
+    <label for="analyte_name"><b>Choose an analyte:</b></label>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+<br><br>
+</body>
+
+{% endblock %}

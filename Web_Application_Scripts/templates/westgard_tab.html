@@ -1,0 +1,32 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}Westgard QC Rules{% endblock %}
+
+{% block main %}
+
+<style type="text/css">
+ ul {
+  list-style-type: none;
+ }
+</style>
+<head>
+    <meta charset="UTF-8">
+
+    <h2>Westgard Rules :</h2>
+    <h3>{{analytes[0]}}</h3>
+</head>
+
+<body>
+<p>The following rules (Westgard) are designed to alert laboratory staff of more egregious qc results and stop testing:</p>
+<p>Standard deviation has been tweaked to help demonstration detection capability of Westgard Rules function</p>
+
+<br>
+  {{ display1 | safe }}
+<br>
+
+<br>
+  {{ display2 | safe }}
+<br>
+
+</body>
+
+{% endblock %}

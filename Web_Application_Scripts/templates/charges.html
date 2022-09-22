@@ -1,0 +1,30 @@
+{% extends "parent_templates/customer.html" %}
+{% block title %}Billing{% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <title>Customer_Dashboard</title>
+</head>
+<body>
+<br><br>
+<h2>Charges:</h2>
+
+<p>Individual charges are a list of charges per order and update after a new order</p>
+
+<ul>
+<b>INDIVIDUAL CHARGES:</b> <br>
+  {{charges_display1 | safe}}
+</ul>
+<br>
+
+<p>The sum value in this table should equal the total sum of all individual charges</p>
+
+<ul>
+<b>TOTAL CHARGES:</b> <br>
+  {{charges_display2 | safe}}
+</ul>
+
+</body>
+
+{% endblock %}

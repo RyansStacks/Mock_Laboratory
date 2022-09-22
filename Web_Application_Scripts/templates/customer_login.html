@@ -1,0 +1,35 @@
+{% extends "parent_templates/parent.html" %}
+
+{% block title %}Query{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+            <title>Text alignment</title>
+            <style>
+                h1{text-align:left;}
+            </style>
+            <body>
+
+            </body>
+
+        </div>
+    </div>
+<br><br>
+<h2>Customer Log-In:</h2>
+<br><br>
+<p>To begin, simply type any customer id between 100000 and 100499.</p>
+<p>or</p>
+<p>You may also use any new customer id obtained from after placing an order </p>
+<form action="/customer_dashboard" method = "POST">
+    <p>Customer ID <input type = "text" name = "customer_id" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
+
+<p>Please note to view different patients simply submit a different customer id number</p>
+<p>Once "logged-in" you will remain in the customer dashboard indefinitely until a new id is entered</p>
+<p>Please note the purpose of this application is solely to demonstrate database functionality</p>
+<p>This application by no means resemble any form of cybersecurity in a modern application</p>
+<p>I hope to work on that in my next personal project</p>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}Print Barcode{% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <title>Print Barcode</title>
+</head>
+<body>
+<br>
+<h2>Print Barcode:</h2>
+<br>
+<p><b>Please enter an order ID number below to display relevant barcodes:</b></p>
+<p>You may enter an id any new orders you have created </p>
+<p>or</p>
+<p>Choose existing order id numbers 100000 through 100900 </p>
+<form action="/barcode" method = "POST">
+    <p><b>order_id:</b><input type = "text" name = "order_id" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
+</body>
+
+{% endblock %}

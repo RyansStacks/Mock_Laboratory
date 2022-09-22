@@ -1,0 +1,29 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}Barcode{% endblock %}
+
+{% block main %}
+
+<style type="text/css">
+ ul {
+  list-style-type: none;
+ }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barcode</title>
+</head>
+
+<body>
+<br>
+<h2>Customer Barcode:</h2>
+<br>
+  <img src = 'static/barcode.png' >
+    <ul>
+        {% for k,v in display_dict.items() %}
+        <li><b>{{ k }}: {{ v }}</b></li>
+        {% endfor %}
+    </ul>
+</body>
+
+{% endblock %}

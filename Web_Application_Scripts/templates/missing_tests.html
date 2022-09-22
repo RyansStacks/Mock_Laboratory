@@ -1,0 +1,19 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %} Missing  Tests {% endblock %}
+
+{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <title>Missing Tests</title>
+</head>
+<body>
+<ul>
+    <br><br>
+<h2>The Following Test Need To Be Run:</h2> <br>
+  {{missing_tests_display | safe}}
+</ul>
+
+
+</body>
+
+{% endblock %}

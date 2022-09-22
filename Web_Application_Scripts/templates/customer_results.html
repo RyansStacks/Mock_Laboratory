@@ -1,0 +1,19 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}Customer Results{% endblock %}
+
+{% block main %}
+
+<h2>Customer Results:</h2>
+<br><br>
+<h4><b>Enter a Customer or Order ID Below (only 1 entry accepted): </b></h4>
+
+<form action="/customer_results_table" method = "POST">
+    <p>order_id <input type = "text" name = "order_id" /></p>
+    <p><b>OR</b></p>
+    <p>customer_id <input type = "text" name = "customer_id" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
+<p>Note:Due to HIPPA restrictions results are limited to one order or customer id number!</p>
+
+
+{% endblock %}

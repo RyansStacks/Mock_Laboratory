@@ -1,0 +1,26 @@
+{% extends "parent_templates/employee.html" %}
+{% block title %}Quality Control Cumulative Results{% endblock %}
+
+{% block main %}
+
+<style type="text/css">
+ ul {
+  list-style-type: none;
+ }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <h2>Quality Control Cumulative Results for:</h2>
+    <h3>{{analytes[0]}}</h3>
+</head>
+<body>
+
+
+    <br><br>
+<b>QC Values Based on Selected Values:</b> <br>
+  {{qc_cumulative_tab | safe}}
+<br>
+
+</body>
+
+{% endblock %}
