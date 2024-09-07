@@ -12,7 +12,7 @@ https://github.com/RyansStacks/Mock_Laboratory
 
 ## Client Requirements
 
-![ServiceNow](servicenow.png)
+![ServiceNow](https://github.com/RyansStacks/Mock_Laboratory/blob/main/img/servicenow.png)
 
 Perhaps, your organization utlizes a formal ticket system or you simply get an email from your director that a new project is needed. In this project, we received a ServiceNow ticket from the client. At this point we are given very high level information, but it is imperative to setup a Teams meeting with the client to note the specifics and the laboratory's workflow. This is sometimes called the __Physical Schema__ where we document in flowcharts and annotated dictionaries the real world process of the client that will be used in the project.
 
@@ -20,7 +20,7 @@ Perhaps, your organization utlizes a formal ticket system or you simply get an e
 
 Below, is a flowchart that depicts the very specific entities that will needed to be incorporated into the database. Typically, one may think of an entity as being represented in a table; however, in an entity relational database entities may be further divided into tables in a process called normalization that is explained further on.
 
-![physicalschema.png](physicalschema.png)
+![physicalschema.png](https://github.com/RyansStacks/Mock_Laboratory/blob/main/img/physicalschema.png)
 
 ## Database Design
 
@@ -28,13 +28,13 @@ Below, is a flowchart that depicts the very specific entities that will needed t
 
 The relationships seen in the __Logical Schema__ are formally noted with the idea of __Cardinality__ that describes the relationship of similar instances between two or more tables that will be created. For example, we may decide to create a _Customers_ and _Panels_ tables that share the relationship that customers order one or more panels (groups of medical test). We also note in the opposite direction that one or more panels may belong to many customers. This aforementioned _Many-to-Many_ relationship has formal rule sets in database design where in this situation we may want to create a _Bridge Table_ so that each row in the bridge table will relate to one specific customer order. This is obviously important if we want to track one specific order by a customer. In this case, we create the _Orders_ table to handle this complexity. Reducing complexity of relationships between entities (tables) is a processed called __Normalization__.
 
-![erdiagram.png](erdiagram.png)
+![erdiagram.png](https://github.com/RyansStacks/Mock_Laboratory/blob/main/img/erdiagram.png)
 
 ### Logical Schema
 
 Building upon the __Physical Schema__, we create what is commonly referred to as a __Logical Schema__ that serves as the centerpiece between the real-world __Physical Schema__ and the actual database tables. Potential tables are listed with relationships between each table. The major question a data analyst is answering is what is the relationship between each table? 
 
-![logicalschema.png](logicalschema.png)
+![logicalschema.png](https://github.com/RyansStacks/Mock_Laboratory/blob/main/img/logicalschema.png)
 
 ### SQL to Create the Database
 
@@ -130,7 +130,7 @@ Data storage and the use of `TRIGGERS` are excellent in performing data storage 
 
 Below, a classic design for a directory needed for Python Flask to properly run each of the files. 
 
-![directory.png](directory.png)
+![directory.png](https://github.com/RyansStacks/Mock_Laboratory/blob/main/img/directory.png)
 
 
 ### Python Code Example
