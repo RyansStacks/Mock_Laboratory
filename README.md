@@ -1,4 +1,4 @@
-![stockphoto.png]([stockphoto.png](https://github.com/RyansStacks/Mock_Laboratory/blob/main/img/stockphoto.png))
+![stockphoto.png](https://github.com/RyansStacks/Mock_Laboratory/blob/main/img/stockphoto.png)
 
 # Clinical Laboratory Database and Stastistical Application Creation
 
